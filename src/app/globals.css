@@ -65,6 +65,41 @@ main, nav, footer, section {
   z-index: 1;
 }
 
+/* Global section spacing and transitions */
+main > * + * {
+  margin-top: clamp(2.5rem, 5vw, 6rem);
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  main > * + * {
+    margin-top: clamp(2rem, 6vw, 4rem);
+  }
+}
+
 /* Custom Utilities */
 @utility text-gradient {
   @apply bg-clip-text text-transparent bg-linear-to-r from-primary via-accent to-secondary;
