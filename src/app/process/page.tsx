@@ -23,10 +23,12 @@ export default function ProcessPage() {
                 <div className="w-2 h-2 bg-primary rounded-full glow" />
             </div>
             
-            <div className="w-full md:w-[calc(50%-2rem)] pl-12 md:pl-0 p-6 md:p-8 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors ml-auto md:ml-0">
-              <span className="text-5xl font-bold text-white/5 absolute top-4 right-4">{step.number}</span>
-              <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
-              <p className="text-muted-foreground relative z-10">{step.desc}</p>
+            <div className="w-full md:w-[calc(50%-2rem)] pl-14 md:pl-0 ml-auto md:ml-0">
+              <div className="relative p-8 bg-card border border-border rounded-2xl hover:border-primary/50 transition-colors shadow-sm">
+                <span className="absolute top-4 right-4 text-5xl font-bold text-white/7 pointer-events-none select-none">{step.number}</span>
+                <h3 className="text-2xl font-bold mb-2 relative z-10">{step.title}</h3>
+                <p className="text-muted-foreground relative z-10">{step.desc}</p>
+              </div>
             </div>
           </div>
         ))}

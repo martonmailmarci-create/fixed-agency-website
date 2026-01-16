@@ -65,9 +65,7 @@ export default function PricingPage() {
     <div className="flex flex-col gap-20 pb-20">
       <section className="container mx-auto px-6 py-20 pt-32 text-center relative">
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={false}
           transition={{ duration: 0.6, ease: easeOut }}
           className="text-4xl md:text-6xl font-bold tracking-tight"
         >
@@ -76,9 +74,7 @@ export default function PricingPage() {
           </span> Pricing
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={false}
           transition={{ duration: 0.6, ease: easeOut, delay: 0.1 }}
           className="text-muted-foreground max-w-2xl mx-auto mt-4"
         >
@@ -91,9 +87,7 @@ export default function PricingPage() {
           {plans.map((plan, idx) => (
             <motion.div
               key={plan.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={false}
               transition={{ duration: 0.5, ease: easeOut, delay: idx * 0.08 }}
               className={`relative rounded-2xl border p-8 bg-white/7 backdrop-blur-xl ${
                 plan.highlight
