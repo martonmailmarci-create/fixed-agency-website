@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/services`, lastModified },
     { url: `${baseUrl}/process`, lastModified },
     { url: `${baseUrl}/portfolio`, lastModified },
-    { url: `${baseUrl}/enterprise`, lastModified },
+    { url: `${baseUrl}/pricing`, lastModified },
     { url: `${baseUrl}/contact`, lastModified },
   ];
 }

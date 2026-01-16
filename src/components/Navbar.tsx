@@ -9,9 +9,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   { name: "Services", href: "/services" },
+  { name: "Pricing", href: "/pricing" },
   { name: "Process", href: "/process" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Enterprise", href: "/enterprise" },
 ];
 
 export default function Navbar() {
