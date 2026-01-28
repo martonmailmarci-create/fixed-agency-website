@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ClientLayout from "@/components/ClientLayout";
 import AmbientSpotlight from "@/components/AmbientSpotlight";
-import TransitionOverlay from "@/components/TransitionOverlay";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,7 +65,6 @@ export default function RootLayout({
       >
         <Navbar />
         <AmbientSpotlight />
-        <TransitionOverlay />
         <main className="min-h-screen">
             <ClientLayout>{children}</ClientLayout>
         </main>
