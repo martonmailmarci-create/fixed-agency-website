@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="container mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold tracking-tighter hover:text-primary transition-colors z-50">
-            AGENCY
+            Nebula.ai
           </Link>
 
           {/* Desktop Navigation */}
