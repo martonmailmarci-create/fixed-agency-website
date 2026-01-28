@@ -26,7 +26,7 @@ export default function CaseStudyClient({ cs }: { cs: CaseStudy }) {
             {cs.metrics.map((m, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 1, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: easeOut, delay: i * 0.08 }}

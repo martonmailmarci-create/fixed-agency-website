@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="border-t border-border bg-background pt-32 pb-16 mt-auto relative">
       <div className="container mx-auto px-6 sm:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: easeOut }}
@@ -30,7 +30,7 @@ export default function Footer() {
                 Book a Strategy Call
               </Link>
               <Link
-                href="/services"
+                href="/pricing"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full font-semibold border border-white/30 text-white/90 bg-white/7 transition-all duration-200 hover:bg-white/12 hover:border-white/40 hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50"
               >
                 View Pricing
@@ -40,7 +40,7 @@ export default function Footer() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: easeOut, delay: 0.1 }}

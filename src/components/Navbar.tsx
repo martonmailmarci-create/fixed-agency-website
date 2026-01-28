@@ -34,10 +34,8 @@ export default function Navbar() {
         role="navigation"
         aria-label="Main navigation"
         className={clsx(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
-          isScrolled
-            ? "bg-background/80 backdrop-blur-md border-border py-4"
-            : "bg-transparent border-transparent py-6"
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10 bg-background/5 backdrop-blur-md",
+          isScrolled ? "py-4" : "py-6"
         )}
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
@@ -70,9 +68,6 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center gap-4 border-l border-white/10 pl-8">
-              <button className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">
-                Client Login
-              </button>
               <Link
                 href="/contact"
                 className="text-sm font-bold bg-gradient-to-r from-primary to-secondary text-black px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity glow"
@@ -121,9 +116,6 @@ export default function Navbar() {
             <div className="h-px bg-white/10 w-full" />
 
             <div className="flex flex-col gap-4">
-              <button className="text-lg font-medium text-muted-foreground hover:text-white transition-colors text-left">
-                Client Login
-              </button>
               <Link
                 href="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
