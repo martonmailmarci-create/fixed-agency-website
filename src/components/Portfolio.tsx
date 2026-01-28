@@ -42,7 +42,7 @@ export default function Portfolio() {
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
         <div>
             <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
@@ -51,7 +51,7 @@ export default function Portfolio() {
               Selected Work
             </motion.h2>
             <motion.p 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -62,7 +62,7 @@ export default function Portfolio() {
         </div>
         
         <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 1, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -80,7 +80,7 @@ export default function Portfolio() {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 1, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}

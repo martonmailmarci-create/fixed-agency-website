@@ -14,7 +14,7 @@ export default function SectionReveal({ children, className }: Props) {
       whileInView="visible"
       viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
       variants={{
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 1, y: 20 },
         visible: {
           opacity: 1,
           y: 0,

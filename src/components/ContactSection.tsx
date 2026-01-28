@@ -53,7 +53,7 @@ export default function ContactSection() {
     <section className="container mx-auto px-6 py-24">
       <div className="text-center mb-12">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -62,7 +62,7 @@ export default function ContactSection() {
           Start Your Next Project
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -74,7 +74,7 @@ export default function ContactSection() {
 
       <motion.form
         onSubmit={onSubmit}
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 1, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
